@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVRA</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <div class="card">
+        <div class="topo">
+            <h1 style="text-shadow: 0 2px 10px rgb(0, 0, 0, .3)">CIVRA</h1>
+            <p>Inovacao . confianca. Resultado</p>
+            <p style="background:rgb(255, 255, 255, .2); display: inline-block; padding: 6px 14px; border-radius: 20px; margin-top: 12px;">Formulario de Adessao / pedido de servico</p>
+        </div>
+        <div class="progress"><div></div></div>
+
+        <form class="form" action="CIVRA concluido.html" method="post">
+            <h3>1. Dados do cliente</h3>
+            <label>Nome completo *</label>
+            <input type="text" name="nome" required placeholder="Ex: Jailson Rocha">
+
+            <div class="row">
+                <div><label>N de BI / NIF *</label><input type="text" name="bi_nif" required placeholder="Ex: 004567890LA041"></div>
+                <div><label>Data de nascimento</label><input type="date" name="nascimento"></div>
+            </div>
+
+            <div class="row">
+                <div><label>Telefone / whatsApp *</label><input type="tel" name="telefone" required placeholder="Ex: 9xx xxx xxx"></div>
+                <div><label>E-mail</label><input type="email" name="email" required placeholder="exemplo@gmail.com"></div>
+            </div>
+
+            <label>Provincia / municipio</label>
+            <select name="Provincia" required>
+                <option value="">--- Seleciona ---</option>
+                <option>Luanda</option><option>Benguela</option><option>Huila</option>
+                <option>Huambo</option><option>Cabinda</option><option>Uige</option>
+                <option>Lunda-norte</option><option>Lubango</option><option>Outra</option>
+            </select>
+
+            <h3>2. O que precisas da CIVRA?</h3>
+            <label>Tipo de Servico</label>
+            <div class="chips">
+                <label><input type="radio" name="Servico" checked>Consultoria</label>
+                <label><input type="radio" name="Servico" checked>Design / Branding</label>
+                <label><input type="radio" name="Servico" checked>Informatica / website</label>
+                <label><input type="radio" name="Servico" checked>formacao</label>
+                <label><input type="radio" name="Servico" checked>Outro</label>
+            </div>
+
+            <label>Detalhes do teu pedido</label>
+            <textarea name="detalhes" rows="4" placeholder="Explica o que queres que a CIVRA faca por ti..."></textarea>
+
+    <label>Orcamento previsto (Kz)</label>
+            <select name="Orcamento">
+                <option>ate 50.000 kz</option>
+                <option>50.000 - 150.000 kz</option>
+                <option>150.000 - 500.000 kz</option>
+                <option>Acima de 500.000 kz</option>
+            </select>
+
+        <section>
+
+            <h3>3. Acesso</h3>
+            <div class="row">
+                <div><label>Como nos conheceste?</label></div>
+                    <select name="origem"><option>Instagram / TikTok</option><option>whatsApp</option><option>Amigo / Indicacao</option><option>Google</option></select>
+            </div>
+            
+            <div style="background: #f8f7ff; padding: 12px; border-radius: 10px; margin-top: 18px; font-size: 13px">
+                <input type="checkbox" required style="width: auto">Aceito ser contactado pela <b>CIVRA</b> e receber novidades e promocoes.
+            </div>
+
+            <button class="btn" type="submit">ENVIAR PARA A CIVRA -></button>
+            <p class="nota">CIVRA 2026 . Os teus dados estao connosco.</p>
+        </section>    
+        </form>
+    </div>
+
+</body>
+</html>
